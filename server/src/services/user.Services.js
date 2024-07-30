@@ -1,10 +1,10 @@
-const User=['ferid',"ehmed"]
+const User = ['ferid', "ehmed"]
 
-const findAll=async ()=>{
-    const users= await User
+const findAll = async () => {
+    const users = await User
     return users
 }
 
-module.exports={
+module.exports = {
     findAll
 }

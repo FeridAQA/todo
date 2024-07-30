@@ -5,14 +5,14 @@ const app= express()
 app.use(cors())
 app.use(express.json())
 
-const port=3000
 
 const router=require('../server/src/router/index')
+const config = require('./src/config')
 
 app.use('/api/v1',router)
 
 
 
-app.listen(port,()=>{
-    console.log(`server ${port} da isleyir`);
+app.listen(config.port,()=>{
+    console.log(`server ${config.port} da isleyir`);
 })
