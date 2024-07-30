@@ -12,5 +12,6 @@ const { userController } = require('../controller'); // Düzgün yoldan import e
 const router = express.Router();
 
 router.get('/', userController.getUsers);
+router.post('/login',userController.createUserController)
 
 module.exports = router;
